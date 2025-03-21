@@ -11,17 +11,14 @@ const Auth = () => {
   const [password, setPassword] = useState<string>("");
   const [variant, setVariant] = useState("login");
 
-  
-
   const login = useCallback(async () => {
     try {
       await signIn("credentials", {
         email,
         password,
-        
+
         callbackUrl: "/profile",
       });
-      
     } catch (error) {
       console.log(error);
     }
