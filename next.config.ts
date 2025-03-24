@@ -1,12 +1,10 @@
 import type { NextConfig } from "next";
 
+
 const nextConfig: NextConfig = {
-  experimental: {
-    appDir: true,
-  },
-  output: "standalone", // Quan trọng để chạy trên Render
+  output: "standalone", // ✅ Giữ lại để chạy trên Render
   images: {
-    unoptimized: true, // Fix lỗi ảnh khi deploy
+    domains: ["example.com"],
   },
 };
 
