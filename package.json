@@ -7,7 +7,7 @@
     "build": "next build",
     "postinstall": "next build",
     "vercel-build": "next build",
-    "start": "next start",
+    "start": "node .next/standalone/server.js",
     "lint": "next lint"
   },
   "dependencies": {

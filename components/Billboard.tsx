@@ -13,7 +13,7 @@ const BillBoard = () => {
   return (
     <div className="relative h-[56.25vw]">
       <video
-        className="w-full h-[52.25vw] object-cover brightness-[70%]"
+        className="w-full sm:h-[52.25vw] h-[70vw]  object-cover brightness-[70%]"
         autoPlay
         muted
         loop
@@ -29,7 +29,7 @@ const BillBoard = () => {
         </p>
         <div className="flex flex-row items-center mt-3 md:mt-4 gap-3">
           <PlayButton movieId={data?.id}/>
-          <button onClick={handleOpenModal} className="bg-white text-white bg-opacity-30 rounded-md py-1 md:py-2 px-2 md:px-4 text-xs lg:text-lg font-semibold flex flex-row  items-center hover:bg-opacity-40 transition">
+          <button onClick={handleOpenModal} className="bg-white text-white bg-opacity-30 rounded-md py-1 md:py-2 px-5 md:px-5 text-xs lg:text-lg font-semibold flex flex-row  items-center hover:bg-opacity-40 transition">
             <IoIosInformationCircleOutline className="mr-1"/>
             More Infor
           </button>
